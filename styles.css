@@ -1,0 +1,104 @@
+body {background:url('images/background.png') no-repeat scroll center top #f4f5f6 ; font-family:'Noto Sans'}
+ .jst {text-align:justify;}
+.right {float:right !important;}
+.left {float:left !important}
+.text-right {text-align:right !important}
+.text-left {text-align:left !important}
+.text-center {text-align:center !important; }
+.text-center img {display: inline;}
+
+#head {width:100%; min-height:70px;position: relative;margin-top: 30px; }
+#logo {padding:10px 12px;background:url('images/logobg.png') no-repeat scroll left top #99D3EC ; float: left; border-right: 1px dotted;}
+#logo img{float:left; padding-left: 80px;}
+.intotext{ padding-left: 10px;}
+
+// css
+#menu {
+  width: 1045px;
+  height: 40px;
+  clear: both;
+}
+ 
+ul#nav {
+  float: left;
+  width: 1045px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ 
+ul#nav li {
+  display: inline;
+}
+ 
+ul#nav li a {
+  float: left;
+  font: bold 0.6em arial,verdana,tahoma,sans-serif;
+  line-height: 40px;
+  color: #4D8EBA;
+  text-decoration: none;
+  margin: 0;
+  padding: 0 30px;
+  background: #F5FBFD;
+  border-radius: 5px 5px 0px 0px; 
+-moz-border-radius: 5px 5px 0px 0px; 
+-webkit-border-radius: 5px 5px 0px 0px; 
+border-top: 4px ridge #ADDDF0;
+border-right: 1px ridge #A1D7ED;
+}
+ 
+/* APPLIES THE ACTIVE STATE */
+ul#nav .current a, ul#nav li:hover > a  {
+  color: #fff;
+  text-decoration: none;
+  background: #4D8EBA; 
+}
+ 
+/* THE SUBMENU LIST HIDDEN BY DEFAULT */
+ul#nav  ul {
+  display: none;
+}
+ 
+/* WHEN THE FIRST LEVEL MENU ITEM IS HOVERED, THE CHILD MENU APPEARS */
+ul#nav li:hover > ul {
+  position: absolute;
+  display: block;
+  width: 1005px;
+  height: 45px;
+  position: absolute;
+  margin: 40px 0 0 0;
+  background: #4D8EBA; 
+}
+ul li a.active
+{
+    color: #fff !important;
+    background: #4D8EBA !important;
+    
+}
+
+ul#nav li > ul li a.last{
+    border-right: 0px !important;
+}
+ul#nav li:hover > ul li a {
+  float: left;
+  font: bold 0.6em arial,verdana,tahoma,sans-serif;
+  line-height: 40px;
+  color: #fff;
+  text-decoration: none;
+  margin: 0;
+  border-right: 1px solid #A1D7ED;
+  border-top: 0px;
+  border-left: 0px;
+  border-bottom: 0px;
+  background: #4D8EBA;
+  border-radius: 0;
+  padding: 0px 30px;
+}
+ 
+ul#nav li:hover > ul li a:hover {
+  color: #FFF;
+  text-decoration: none;
+  text-shadow: none;
+}
+.intotext{ color: #6CAFD0;}
+.btn1,.btn2{ background:rgba(0, 0, 0, 0) url("images/btn-1.png") no-repeat scroll 5px 0;padding:0px 10px; font-size: 0.7em;cursor: pointer;}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="es" />
+<title>960 Grid System — Demo</title>
+<link rel="stylesheet" href="css/960.css" />
+<link rel="stylesheet" href="styles.css" />
+<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery.min.js" ></script>
+<script>
+
+$(function() { 
+    $('#nav').on('click','.nav', function ( e ) {
+        e.preventDefault();
+        $(this).parents('#nav').find('.active').removeClass('active').end().end().addClass('active');
+        
+    });
+});
+</script>
+</head>
+<body>
+<div class="container_12" id="bodyarea">
+<div id="head" class="left">
+<div class="grid_3  " id="logo">
+    <a href="#"><img src="images/logo.png" /></a>
+</div>
+    <div class="grid_3 left" id="menu">
+        <label class="intotext">lorom ipsum dolor sit..</label>
+    </div>    
+<div  class="right grid_4">
+    <a class="btn1">Zaloguj sie</a>
+<a class="btn2">Rejestracja</a>
+</div>
+ 
+</div>
+<div class="left" id="menu">
+
+ <ul id="nav">
+     <li><a href="#" class="nav">Strona Gl.</a></li>
+<li><a href="#" class="nav">Uzytkownicy</a>
+ <ul> 
+ <li><a href="#">Przegladaj</a></li>
+ <li><a href="#">Online</a></li>
+ <li><a href="#">Znajomi</a></li>
+ <li><a href="#">Wyszukiwarka</a></li>
+ <li><a href="#">Moje konto</a></li>
+ <li><a href="#">Moja poczta</a></li>
+ <li><a href="#" class="last">Moj profil</a></li>
+ </ul>
+</li>
+<li><a href="#" class="nav">Filmy</a></li> 
+<li><a href="#" class="nav">Muzyka</a></li> 
+<li><a href="#" class="nav">Zdjecia</a></li> 
+<li><a href="#" class="nav">Gry</a></li> 
+<li><a href="#" class="nav">Blogi</a></li> 
+<li><a href="#" class="nav">Grupy</a></li> 
+<li><a href="#" class="nav">Forum</a></li> 
+<li><a href="#" class="nav">Chat</a></li> 
+</ul>
+</div>
+
+</div>
+</body>
+</html>
