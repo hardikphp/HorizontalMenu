@@ -18,10 +18,8 @@ body {background:url('images/background.png') no-repeat scroll center top #f4f5f
   height: 40px;
   clear: both;
 }
- 
 ul#nav {
   float: left;
-  width: 1045px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -101,4 +99,4 @@ ul#nav li:hover > ul li a:hover {
   text-shadow: none;
 }
 .intotext{ color: #6CAFD0;}
-.btn1,.btn2{ background:rgba(0, 0, 0, 0) url("images/btn-1.png") no-repeat scroll 5px 0;padding:0px 10px; font-size: 0.7em;cursor: pointer;}
+.btn1,.btn2{ background:rgba(0, 0, 0, 0) url("images/btn-1.png") no-repeat scroll 0px 0;padding:0px 16px; font-size: 0.7em;cursor: pointer;}
